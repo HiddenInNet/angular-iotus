@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Top-level configuration
+  "name": "angular-iotus",
+  "main": "./dist/angular-iotus/server/server.mjs",
+  "upload_source_maps": true,
+  // Set this to today's date
+  "compatibility_date": "2026-11-12",
+  "workers_dev": false,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist/angular-iotus/browser",
+  },
+  //   "route": {
+  //     "pattern": "example.org/*",
+  //     "zone_name": "example.org",
+  //   },
+  //   "kv_namespaces": [
+  //     {
+  //       "binding": "<MY_NAMESPACE>",
+  //       "id": "<KV_ID>",
+  //     },
+  //   ],
+  //   "env": {
+  //     "staging": {
+  //       "name": "my-worker-staging",
+  //       "route": {
+  //         "pattern": "staging.example.org/*",
+  //         "zone_name": "example.org",
+  //       },
+  //       "kv_namespaces": [
+  //         {
+  //           "binding": "<MY_NAMESPACE>",
+  //           "id": "<STAGING_KV_ID>",
+  //         },
+  //       ],
+  //     },
+  //   },
+}
